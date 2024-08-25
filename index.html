@@ -1,432 +1,114 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal-Solution</title>
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/92305b1b0f.js" crossorigin="anonymous"></script>
-    <!-- daisy ui -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-    <style>
-        .em-font{  font-family: "EB Garamond", serif;}
-    </style>
-    <!-- extended cdn -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'bg-btn': '#B68C5A',
-                'nav-text': 'rgba(112, 112, 112, 1)',
-                'liner-1': 'rgba(243, 243, 243, 0)',
-                'liner-2': 'rgba(243, 243, 243, 1)',
-              }
-             
-              
-      
-            }
-          }
-        }
-      </script>
-    
-</head>
-<body class="em-font">
-    <!-- header section -->
-     <header class="md:container mx-auto">
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
-                </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Home</a></li>
-                  <li><a>Services</a></li>
-                  <li><a>Cases</a></li>
-                  <li><a>Blog</a></li>
-                  <li><a>Contact Us</a></li>
-                </ul>
-              </div>
-              <img src="images/logo2.png" alt="">
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a class="text-nav-text">Home</a></li>
-                <li><a class="text-nav-text">Services <i class="fa-solid fa-chevron-right"></i></a></li>
-                <li><a class="text-nav-text">Cases <i class="fa-solid fa-chevron-right"></i></a></li>
-                <li><a class="text-nav-text">Blog <i class="fa-solid fa-chevron-right"></i></a></li>
-                <li><a class="text-nav-text">Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
-              </ul>
-            </div>
-            <div class="navbar-end">
-              <a class="btn bg-bg-btn text-white">Free Consultation</a>
-            </div>
-          </div>
-          <!-- banner section -->
-          <div
-          class="hero md:h-[550px]"
-          style="background-image: url(images/banner.png);">
-          <div class="hero-overlay bg-opacity-60"></div>
-          <div class="hero-content text-neutral-content text-center">
-            <div class="max-w-md">
-              <h1 class="mb-5 text-5xl font-bold">We Provide Effective Legal Solutions</h1>
-              <p class="mb-5">
-                To be an activist is to speak. To be an advocate is to listen. Society can't move forward without both.
-              </p>
-              <div>
-                <input
-                type="text"
-                placeholder="Search your services"
-                class="input input-bordered input-success w-[300px] " />
-                <button class="btn px-6 py-3 bg-bg-btn text-white">Search</button>
-              </div>
-            </div>
-          </div>
-        </div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legal-Solution</title>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/92305b1b0f.js" crossorigin="anonymous"></script>
+  <!-- daisy ui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+    rel="stylesheet">
 
-     </header>
-
-
-
-
-    <!-- main section -->
-     <main class="md:container mx-auto">
-
-        <!-- legal practice section -->
-         <section class="my-20">
-            <h3 class="text-3xl font-bold text-center mb-4">The Legal Practice Area</h3>
-            <p class="text-center text-gray-600">Do not wait: the time will never be 'just right'. Start where you stand,<br> and work whatever tools you may have at your command and better tools will be found as you go along. </p>
-            <div class="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-                <!-- card-1 -->
-                <div class="card hover:bg-gradient-to-t from-liner-1 to-liner-2  border border-1 border-red-500  ">
-                  <figure class="px-10 pt-10">
-                    <img
-                      src="images/business.png"
-                      alt=""
-                      class="rounded-xl" />
-                  </figure>
-                  <div class="card-body items-center text-center">
-                    <h2 class="card-title">Business Law</h2>
-                    <p>Business law is a body of rules, regulations, and principles that governs the activities of a business. </p>
-                    <img src="images/Frame.png" alt="">
-                  </div>
-                </div>
-                <!-- card-2 -->
-                <div class="card hover:bg-gradient-to-t from-liner-1 to-liner-2 border border-1 border-red-500 ">
-                  <figure class="px-10 pt-10">
-                    <img
-                      src="images/criminal.png"
-                      alt=""
-                      class="rounded-xl" />
-                  </figure>
-                  <div class="card-body items-center text-center">
-                    <h2 class="card-title">Criminal Law</h2>
-                    <p>The main theories for criminal law include: to deter crime, to reform the perpetrator, to provide retribution for the act, and to prevent further crimes.  </p>
-                    <img src="images/Frame.png" alt="">
-                  </div>
-                </div>
-                <!-- card-3 -->
-                <div class="card border border-1 border-red-500 ">
-                  <figure class="px-10 pt-10">
-                    <img
-                      src="images/child.png"
-                      alt=""
-                      class="rounded-xl" />
-                  </figure>
-                  <div class="card-body items-center text-center">
-                    <h2 class="card-title">Child Support</h2>
-                    <p>All children go through periods of low self esteem, which includes lacking in confidence. This is mainly due to a lack of affirming, positive feed-back from . </p>
-                    <img src="images/Frame.png" alt="">
-                  </div>
-                </div>
-                <!-- card-4 -->
-                <div class="card hover:bg-gradient-to-t from-liner-1 to-liner-2  border border-1 border-red-500 ">
-                  <figure class="px-10 pt-10">
-                    <img
-                      src="images/education.png"
-                      alt=""
-                      class="rounded-xl" />
-                  </figure>
-                  <div class="card-body items-center text-center">
-                    <h2 class="card-title">Education Law</h2>
-                    <p>The lack of schooling and poor education have negative effects on the population and country. The children leave school without having acquired the basics. </p>
-                    <img src="images/Frame.png" alt="">
-                  </div>
-                </div>
-                <!-- card-5 -->
-                <div class="card hover:bg-gradient-to-t from-liner-1 to-liner-2  border border-1 border-red-500 ">
-                  <figure class="px-10 pt-10">
-                    <img
-                      src="images/divorce.png"
-                      alt=""
-                      class="rounded-xl" />
-                  </figure>
-                  <div class="card-body items-center text-center">
-                    <h2 class="card-title">Divorce Law</h2>
-                    <p> Divorce is a long, never-pleasant procedure that requires patience, understanding, and often a good family lawyer. </p>
-                    <img src="images/Frame.png" alt="">
-                  </div>
-                </div>
-                <!-- card-6 -->
-                <div class="card hover:bg-gradient-to-t from-liner-1 to-liner-2  border border-1 border-red-500  ">
-                  <figure class="px-10 pt-10">
-                    <img
-                      src="images/tax.png"
-                      alt=""
-                      class="rounded-xl" />
-                  </figure>
-                  <div class="card-body items-center text-center">
-                    <h2 class="card-title">Tax Law</h2>
-                    <p>Income Tax Rules. Regulations. Instructions. Income Tax · Vat · Customs. Acts ... Income Tax Rules · Customs Rules · Excise Rules · Other Relevant Rules. SROs. </p>
-                    <img src="images/Frame.png" alt="">
-                  </div>
-                </div>
-
-            </div>
-
-         </section>
-
-         <!-- client section -->
-          <section class="my-20">
-            <h3 class="text-3xl font-bold text-center mb-4">What Our Client Say</h3>
-            <p class="text-center text-gray-600">Actions speak louder than quotes.
-              Great customer service makes life easier for everyone.
-              Stop quoting and start doing.</p>
-             <!-- carousel slide -->
-             <div class="carousel w-full mt-10">
-              <!-- slide-1 -->
-              <div id="slide1" class="carousel-item relative w-full" style="background-image: url(./images/slider-1.jpg); background-size: cover; background-position: center;" >
-                
-                <!-- lend -->
-               <div class="mx-auto mt-5 ">
-                <img class="w-36 mx-auto" src="./images/user-1.png" alt="">
-                <h4 class="font-bold text-xl text-white text-center mt-5">Mike Jonson</h4>
-                <p class="text-gray-300">Your most unhappy customers are your greatest source of learning.</p>
-               </div>
-                <!-- lend -->
-
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                  <a href="#slide3" class="btn btn-circle">❮</a>
-                  <a href="#slide2" class="btn btn-circle">❯</a>
-                </div>
-              </div>
-             
-              <!-- slide-2 -->
-              <div id="slide2" class="carousel-item relative w-full" style="background-image: url(./images/slider-2.jpg); background-size: cover; background-position: center;" >
-                
-                <!-- lend -->
-               <div class="mx-auto mt-5 ">
-                <img class="w-36 mx-auto" src="./images/user-2.png" alt="">
-                <h4 class="font-bold text-xl text-white text-center mt-5">Ned more</h4>
-                <p class="text-gray-300">Your most unhappy customers are your greatest source of learning.</p>
-               </div>
-                <!-- lend -->
-
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                  <a href="#slide1" class="btn btn-circle">❮</a>
-                  <a href="#slide3" class="btn btn-circle">❯</a>
-                </div>
-              </div>
-             
-              <!-- slide-3 -->
-              <div id="slide3" class="carousel-item relative w-full" style="background-image: url(./images/slider-3.jpg); background-size: cover; background-position: center;" >
-                
-                <!-- lend -->
-               <div class="mx-auto mt-5 ">
-                <img class="w-36 mx-auto" src="./images/user-3.png" alt="">
-                <h4 class="font-bold text-xl text-white text-center mt-5">Jia Bond</h4>
-                <p class="text-gray-300">Your most unhappy customers are your greatest source of learning.</p>
-               </div>
-                <!-- lend -->
-
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                  <a href="#slide2" class="btn btn-circle">❮</a>
-                  <a href="#slide1" class="btn btn-circle">❯</a>
-                </div>
-              </div>
-             
-             
-            </div>
-                 
-          </section>
-
-          <!-- Qna section -->
-           <section class="my-24">
-            <h3 class="text-3xl font-bold text-center mb-4">Frequently Asked Any Questions</h3>
-            <p class="text-center text-gray-600">Actions speak louder than quotes.
-              Great customer service makes life easier for everyone.</p>
-            <!-- accordion -->
-            <div class="hero ">
-              <div class="hero-content flex-col lg:flex-row-reverse">
-                <img
-                  src="./images/faq.png"
-                  class="max-w-sm rounded-lg " />
-                <div class="space-y-5">
-                  <div class="collapse collapse-plus border border-1 border-blue-500">
-                    <input type="radio" name="my-accordion-3" checked="checked" />
-                    <div class="collapse-title text-xl font-medium">Are application fee waivers available?</div>
-                    <div class="collapse-content">
-                      <p>Actions speak louder than quotes.
-                        Great customer service makes life easier for everyone.</p>
-                    </div>
-                  </div>
-                  <div class="collapse collapse-plus  border border-1 border-blue-500">
-                    <input type="radio" name="my-accordion-3" />
-                    <div class="collapse-title text-xl font-medium">Are application fee waivers available?</div>
-                    <div class="collapse-content">
-                      <p>Actions speak louder than quotes.
-                        Great customer service makes life easier for everyone.</p>
-                    </div>
-                  </div>
-                  <div class="collapse collapse-plus  border border-1 border-blue-500">
-                    <input type="radio" name="my-accordion-3" />
-                    <div class="collapse-title text-xl font-medium">Are application fee waivers available?</div>
-                    <div class="collapse-content">
-                      <p>Actions speak louder than quotes.
-                        Great customer service makes life easier for everyone.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-           </section>
-
-           <!-- contact section -->
-            <section class="my-24 lg:px-24 mx-auto">
-              <h3 class="text-3xl font-bold text-center mb-4">Contact With Us</h3>
-              <p class="text-center text-gray-600">Need help or need consultant or need a adviser .You are free to contact with us.</p>
-              <!-- contact div -->
-              <div class="grid grid-cols-1 lg:grid-cols-2 
-              ">
-            
-              <!-- four card -->
-               <div class="grid grid-cols-2 ">
-                <!-- one -->
-                <div class=" bg-slate-200 border-2 border-slate-100 text-center">
-                  <img class="mx-auto" src="./images/address.png" alt="">
-                  <h6 class="text-xl font-medium">Address</h6>
-                  <p>A108 Adam Street,<br>
-                    New York, NY 535022</p>
-                </div>
-                <!-- two -->
-                <div class=" bg-slate-200 border-2 border-slate-100  text-center">
-                  <img class="mx-auto" src="./images/call.png" alt="">
-                  <h6 class="text-xl font-medium">Call Us</h6>
-                  <p>+88 01750 00 00 00 <br>
-                    +88 01750 00 00 00</p>
-                </div>
-                <!-- three -->
-                <div class=" bg-slate-200 border-2 border-slate-100 text-center">
-                  <img class="mx-auto" src="./images/email.png" alt="">
-                  <h6 class="text-xl font-medium">Email Us</h6>
-                  <p>info@gmail.com <br>
-                    info@gmail.com</p>
-                </div>
-                <!-- four -->
-                <div class=" bg-slate-200 border-2 border-slate-100  text-center">
-                  <img class="mx-auto" src="./images/time.png" alt="">
-                  <h6 class="text-xl font-medium">Working Hours</h6>
-                  <p>Mon-Fri: 9AM to 5PM <br>
-                    Sunday: 9AM to 1 PM</p>
-                </div>
-
-               
-
-               </div>
-
-
-               <!-- input field -->
-                <div class="my-8 space-y-3 text-center">
-                  <input
-                    type="text"
-                     placeholder="Your Name"
-                      class="input input-bordered input-primary w-[325px] " />                 
-                  <input
-                    type="text"
-                     placeholder="Your Email"
-                      class="input input-bordered input-primary w-[325px]" />                 
-                  <input
-                    type="text"
-                     placeholder="Subject"
-                      class="input input-bordered input-primary w-[325px] " />                 
-                  <input
-                    type="text"
-                     placeholder="Your Message"
-                      class="input input-bordered input-primary h-[100px] w-[325px] " /> <br>
-                      <button class="btn bg-bg-btn btn-wide w-[325px] ">Send Message</button>                 
-                </div>
-           
-              </div>
-            </section>
-
-
-
-     </main>
-
-
-
-    <!-- footer section -->
-    
-      <footer class="footer bg-black text-base-content p-10 text-gray-300">
-        <div>
-         <img src="./images/logo.png" alt="">
-         <p>the quality of being just; righteousness,<br> equitableness, or moral rightness: <br> to uphold right reason to complain with justice.</p>
-        </div>
-        <nav>
-          <h6 class="footer-title">Useful Link</h6>
-          <a class="link link-hover">Homes</a>
-          <a class="link link-hover">About Us</a>
-          <a class="link link-hover">Cases</a>
-          <a class="link link-hover">Blog</a>
-          <a class="link link-hover">Contact Us</a>
-        </nav>
-        <nav>
-          <h6 class="footer-title">Contact Now</h6>
-         <p>555 4th 5t NW, Washington <br>
-          DC 20530, United States</p>
-         <p>+88 01750 000 000 <br>
-          +88 01750 000 000</p>
-         <p>info@gmail.com <br>
-          info@gmail.com</p>
+  <!-- extended cdn -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: 'rgb(182, 140, 90)',
+            secondary: 'rgb(112, 112, 112)',
+            body: 'rgb(65, 64, 64)',
+            accent: ' rgb(255, 255, 255)',
+            body_neutral: 'rgb(243, 243, 243)',
+            whit: 'rgb(231, 231, 231)',
+          },
+          fontFamily: {
+            fontFamily: "EB Garamond",
+          },
+          backgroundImage: {
+        hero: "url('/images/banner.png')",
         
-        </nav>
-        <form>
-          <h6 class="footer-title">Subscribe</h6>
-          <fieldset class="form-control w-80">
-            <label class="label">
-              <span class="label-text text-white">Enter your email address</span>
-            </label>
-            <div class="join">
-              <input
-                type="text"
-                placeholder="username@site.com"
-                class="input input-bordered join-item w-[100px] lg:w-full" />
-              <button class="btn btn-primary join-item">Subscribe</button>
-            </div>
-          </fieldset>
-        </form>
-      </footer>
-    
+      },
 
+        }
+      }
+    }
+  </script>
+
+</head>
+
+<body class="em-font">
+  <!-- header section -->
+  <header>
+    <!-- nav bar  -->
+    <nav class="w-full lg:w-11/12 mx-auto p-4 lg:p-2">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+
+          <img src="./images/logo2.png" alt="">
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="text-secondary font-normal text-base hover:text-black transition-colors duration-300 ease-in-out"><a>Home</a></li>
+            <li class="text-secondary font-normal text-base hover:text-black transition-colors duration-300 ease-in-out"><a>Services <i class="fa-solid fa-chevron-right"></i></a></li>
+            <li class="text-secondary font-normal text-base hover:text-black transition-colors duration-300 ease-in-out"><a>Cases <i class="fa-solid fa-chevron-right"></i></a></li>
+            <li class="text-secondary font-normal text-base hover:text-black transition-colors duration-300 ease-in-out"><a>Blog <i class="fa-solid fa-chevron-right"></i></a></li>
+            <li class="text-secondary font-normal text-base hover:text-black transition-colors duration-300 ease-in-out"><a>Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="hidden lg:block">
+          <a class="btn bg-primary text-accent font-medium">Free Consultation</a>
+        </div>
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+            <li class="text-secondary font-normal text-base hover:text-black transition-colors duration-300 ease-in-out"><a>Home</a></li>
+            <li class="text-secondary font-normal text-base hover:text-black transition-colors duration-300 ease-in-out"><a>Services</a></li>
+            <li class="text-secondary font-normal text-base hover:text-black transition-colors duration-300 ease-in-out"><a>Cases</a></li>
+            <li class="text-secondary font-normal text-base hover:text-black transition-colors duration-300 ease-in-out"><a>Blog</a></li>
+            <li class="text-secondary font-normal text-base hover:text-black transition-colors duration-300 ease-in-out"><a>Contact Us</a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </nav>
+    <!-- banner -->
+    <div
+    class="hero w-full lg:w-11/12 mx-auto"
+    style="background-image: url(./images/banner.png);">
+    <div class="hero-overlay bg-opacity-60"></div>
+    <div class="hero-content text-neutral-content text-center">
+      <div class="max-w-md">
+        <h1 class="text-2xl lg:text-6xl font-bold text-accent">We Provide Effective Legal Solutions</h1>
+        <p class="py-6 text-whit">
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+          some form, by injected humour.
+        </p>
+        <div class="space-x-4 gap-3">
+          <input class="py-3 px-5 w-64 rounded-lg mb-2 lg:mb-0" type="text" placeholder="Search your services">
+          <button class="btn  bg-primary text-lg font-medium text-accent">Search</button>
+      </div>
+    </div>
+  </div>
+  </header>
+
+  <!-- main section -->
+  <main></main>
+
+  <!-- footer section -->
+  <footer></footer>
 </body>
+
 </html>
